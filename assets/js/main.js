@@ -13,6 +13,7 @@ showMenu('nav-toggle','nav-menu')
 
 
 
+
 /*===== REMOVE MENU =====*/
 // Clicking on a nav item (link), expanded menu will be removed (disapear)
 const navLink = document.querySelectorAll('.nav__link'),
@@ -21,6 +22,7 @@ function linkAction(){
 	navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
 
 
 
@@ -44,6 +46,8 @@ function scrollActive(){
 		}
 	})
 }
+
+
 
 
 
