@@ -200,6 +200,26 @@ img{
 	margin-top: 3rem !important;
 }
 
+.mb-1{
+	margin-bottom: 0.25rem !important;
+}
+
+.mb-2{
+	margin-bottom: 0.5rem !important;
+}
+
+.mb-3{
+	margin-bottom: 1rem !important;
+}
+
+.mb-4{
+	margin-bottom: 1.5rem !important;
+}
+
+.mb-5{
+	margin-bottom: 3rem !important;
+}
+
 .text-white{
 	color: #fff !important;
 }
@@ -804,6 +824,58 @@ color: #6c757d !important;
 
 
 
+/*===== START CONTACT =====*/
+.contact__container{
+	background-color: rgba(0, 0, 0, .95);
+	color: var(--white-color);
+	padding: 2rem .5rem;
+	border-radius: .5rem;
+	text-align: center;
+}
+
+.contact__description{
+	margin-bottom: var(--mb-5);
+}
+
+.contact__input{
+	width: 90%;
+	margin: 1rem;
+	outline: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-left-radius: .5rem;
+	border-bottom-right-radius: .5rem;
+	font-size: 1rem;
+	border-bottom: .085rem solid var(--info);
+	line-height: 25px;
+	color: #555;
+	letter-spacing: .1rem;
+
+}
+
+
+.contact__input::placeholder{
+	color: var(--dark-color-light);
+	font-family: var(--body-font);
+	font-size: var(--small-font-size);
+	font-weight: var(--font-medium);
+	font-style: italic;
+}
+
+.contact__form{
+	display: block;
+	column-gap: .5rem;
+	background-color: var(--white-color);
+	padding: .5rem;
+	border-radius: .5rem;
+}
+
+/*===== END CONTACT =====*/
+
+
+
+
 
 /*===== START FOOTER =====*/
 footer{
@@ -1215,6 +1287,18 @@ a.badge-light:focus, a.badge-light.focus {
 	.newsletter__subscribe{
 		width: 360px;
 		height: max-content;
+	}
+
+	.contact__container{
+		grid-template-columns: max-content max-content;
+		justify-content: center;
+		align-items: center;
+		padding: 4.5rem 2rem;
+		column-gap: 3rem;
+	}
+
+	.contact__description{
+		margin-bottom: 0;
 	}
 
 	.item__shape{
