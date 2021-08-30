@@ -1,3 +1,7 @@
+/*===== ONSCROLL EVENT (scrollToTop button) =====*/
+const scrollToTop = document.getElementById('scrollToTop')
+scrollToTop.style.display = 'none'
+
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
 	const toggle = document.getElementById(toggleId),
@@ -58,6 +62,10 @@ window.onscroll = ()=>{
 
 	if (this.scrollY >= 200){
 		nav.classList.add('scroll-header')
+		scrollToTop.style.display = 'block'
+		scrollToTop.addEventListener('click', () =>{
+			window.scrollTo(0, 0)
+		})
 	}
 	else{
 		nav.classList.remove('scroll-header')
