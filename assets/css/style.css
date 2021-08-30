@@ -229,6 +229,7 @@ img{
 .nav__logo{
 	font-weight: var(--font-semi-bold);
 	display: inline-flex;
+	position: absolute;
 }
 
 .nav__toggle{
@@ -1012,6 +1013,11 @@ a.badge-light:focus, a.badge-light.focus {
 	}
 }
 
+@media screen and (max-width: 768px){
+	.nav__logo{
+		left: calc(100vw - 60%);;
+	}
+}
 
 @media screen and (min-width: 768px){
 	:root{
@@ -1084,7 +1090,7 @@ a.badge-light:focus, a.badge-light.focus {
 	}
 
 	.home__img2{
-		width: 470px;
+		width: 440px;
 		top: 3.5rem;
 		right: 0;
 		left: -3rem;
